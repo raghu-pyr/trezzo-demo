@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+
+        $(".carousel").carousel();
+
+        $(".slider").slider({
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 3000
+        });
+      });
+    </script>
+
+    <div class="navbar-fixed">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">TREZZO</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">SERVICES</a></li>
+              <li><a href="collapsible.html">INDUSTRIES</a></li>
+              <li><a href="mobile.html">ABOUT</a></li>
+              <li><a href="mobile.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <section id="home-banner" class="section slider">
+      <ul class="slides">
+        <li>
+          <img src="img/bolt.jpg" alt="" />
+          <div class="caption center-align">
+            <h2>Engineering</h2>
+            <h5 class="white-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+              animi facilis architecto quae, illo eveniet!
+            </h5>
+            <a href="#" class="btn btn-large">Contact</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/tools-gear.jpg" alt="" />
+          <div class="caption right-align">
+            <h2>Innovation</h2>
+            <h5 class="white-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+              recusandae. Quis quisquam ullam veniam ut.
+            </h5>
+            <a href="#" class="btn btn-large">Learn More</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/laptop-banner.jpg" alt="" />
+          <div class="caption left-align">
+            <h2>Innovation</h2>
+            <h5 class="white-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+              recusandae. Quis quisquam ullam veniam ut.
+            </h5>
+            <a href="#" class="btn btn-large">Learn More</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="vert-card">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card medium hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/design-card.jpg" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"
+                  >Design<i class="material-icons right">more_vert</i></span
+                >
+                <p>
+                  <a href="#" class="btn btn-medium"
+                    >Explore
+                    <i class=" right material-icons">
+                      arrow_forward
+                    </i>
+                  </a>
+                </p>
+              </div>
+              <div class="card-reveal center-align">
+                <span class="card-title grey-text text-darken-4"
+                  >Design<i class="material-icons right">close</i></span
+                >
+                <p id="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Reiciendis recusandae nostrum esse, repellat quis veniam id
+                  quam eos placeat optio illum culpa adipisci assumenda ut
+                  obcaecati distinctio provident sint architecto?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card medium hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/manufacturing-card.jpg" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"
+                  >Manufacturing<i class="material-icons right"
+                    >more_vert</i
+                  ></span
+                >
+                <p>
+                  <a href="#" class="btn btn-medium"
+                    >Explore
+                    <i class=" right material-icons">
+                      arrow_forward
+                    </i>
+                  </a>
+                </p>
+              </div>
+              <div class="card-reveal center-align">
+                <span class="card-title grey-text text-darken-4"
+                  >Manufacturing<i class="material-icons right">close</i></span
+                >
+                <p id="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Reiciendis recusandae nostrum esse, repellat quis veniam id
+                  quam eos placeat optio illum culpa adipisci assumenda ut
+                  obcaecati distinctio provident sint architecto?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card medium hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/test-card.jpg" />
+              </div>
+              <div class="card-content center-align">
+                <span class="card-title activator grey-text text-darken-4"
+                  >Testing<i class="material-icons right">more_vert</i></span
+                >
+                <p>
+                  <a href="#" class="btn btn-medium"
+                    >Explore
+                    <i class=" right material-icons">
+                      arrow_forward
+                    </i>
+                  </a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Testing<i class="material-icons right">close</i></span
+                >
+                <p id="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Reiciendis recusandae nostrum esse, repellat quis veniam id
+                  quam eos placeat optio illum culpa adipisci assumenda ut
+                  obcaecati distinctio provident sint architecto?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="clients">
+      <div class="container">
+        <div class="row">
+          <h4 class="center" id="dark-header">Our Clients</h4>
+        </div>
+        <div class="row">
+          <div class="valign-wrapper">
+            <div class="col m2 s12">
+              <img src="img/HCL-logo.jpg" class="responsive-img" alt="" />
+            </div>
+            <div class="col m2 s12">
+              <img src="img//Danfoss-logo.png" class="responsive-img" alt="" />
+            </div>
+            <div class="col m2 s12">
+              <img src="img/cedi-logo.PNG" class="responsive-img" alt="" />
+            </div>
+            <div class="col m2 s12">
+              <img src="img/sg-logo.png" class="responsive-img" alt="" />
+            </div>
+            <div class="col m2 s12">
+              <img
+                src="img/caterpillar-Logo.png"
+                class="responsive-img"
+                alt=""
+              />
+            </div>
+            <div class="col m2 s12">
+              <img src="img/bel-logo.PNG" class="responsive-img" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vision-statement">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card medium horizontal hoverable">
+              <div class="card-stacked">
+                <div class="card-content valign-wrapper">
+                  <h4>VISION</h4>
+                  <h5 class="">
+                    To be a trusted partner for Engineering & Technology
+                    requirements of Global customers
+                  </h5>
+                </div>
+              </div>
+              <div class="card-image">
+                <img src="img/signpost.png" id="signpost-img" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content valign-wrapper">
+                  <h4 class="right-align">MISSION</h4>
+                  <ul>
+                    <li class="" id="bulleted-list">
+                      To deliver end to end innovative solutions.
+                    </li>
+                    <li class="" id="bulleted-list">
+                      To design & manufacture world class engineering products &
+                      services.
+                    </li>
+                    <li class="" id="bulleted-list">
+                      To follow a systematic & agile project management process
+                    </li>
+                    <li class="" id="bulleted-list">
+                      To consistently demonstrate brand promise.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="industry">
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"
+          ><img src="img/manufacturing-drill.png"
+        /></a>
+        <a class="carousel-item" href="#two!"
+          ><img src="img/manufacturing-drill.png"
+        /></a>
+        <a class="carousel-item" href="#three!"
+          ><img src="img/manufacturing-drill.png"
+        /></a>
+        <a class="carousel-item" href="#four!"
+          ><img src="img/manufacturing-drill.png"
+        /></a>
+        <a class="carousel-item" href="#five!"
+          ><img src="img/manufacturing-drill.png"
+        /></a>
+        <a class="carousel-item" href="#six!"
+          ><img src="img/manufacturing-drill.png"
+        /></a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Contact Info</h5>
+            <p class="grey-text text-lighten-4">
+              TREZZO TECHNOLOGY <br />
+
+              #27, Third street, Anna complex, <br />
+              Defense enclave, IAF post, <br />
+              Avadi, Chennai - 600055<br />
+              Tamil Nadu, India.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Service</a></li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Industries</a>
+              </li>
+              <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              © 2020 Copyright TREZZO
+            </div>
+
+            <div class="col l4 offset-l2 s12">
+              <a class="social grey-text text-lighten-4" id="twit-icon" href="#!"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="social grey-text text-lighten-4" id="fb-icon" href="#!"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a class="social grey-text text-lighten-4" id="insta-icon" href="#!"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a class="social grey-text text-lighten-4" id="link-icon" href="#!"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a class="social grey-text text-lighten-4" id="yout-icon" href="#!"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function() {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+
+    <!-- materilaize init codes -->
+
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+
+        $(".carousel").carousel({
+          numVisible: 6
+        });
+
+        $(".slider").slider({
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 3000
+        });
+      });
+    </script>
+  </body>
+</html>

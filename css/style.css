@@ -1,0 +1,93 @@
+:root {
+  --dark-color: #283044;
+  --main-color: #50c9ce;
+  --light-color: #ebf5ee;
+  --supp-color1: #bfa89e;
+  --supp-color2: #8b786d;
+}
+
+nav {
+  background-color: var(--main-color) !important;
+}
+
+.slider .btn {
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: var(--main-color) !important;
+}
+
+section {
+  margin-bottom: 50px !important;
+}
+
+#card-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#clients {
+    background-color: var(--light-color);
+    padding-bottom: 50px;
+}
+
+#dark-header {
+    color: var(--dark-color);
+}
+
+#clients img {
+    margin-top: 30px;
+}
+
+#vision-statement {
+  padding-bottom: 20px !important;
+  text-align: justify;
+  text-justify: distribute;
+}
+
+.valign-wrapper {
+    flex-wrap: wrap;
+}
+
+#signpost-img {
+  z-index: 0;
+}
+
+.carousel-item {
+  width: 300px !important;
+}
+
+#bulleted-list {
+    list-style-type: circle;
+    z-index: 999;
+}
+
+.social {
+  padding: 3px;
+}
+
+#twit-icon:hover {
+  color: #50abf1 !important;
+}
+
+#fb-icon:hover {
+  color: #3a559f !important;
+}
+
+#insta-icon:hover {
+  color: #c82b70 !important;
+}
+
+#link-icon:hover {
+  color: #017bbe !important;
+}
+
+#yout-icon:hover {
+  color: #e02f2f !important;
+}
+
+.page-footer {
+  background-color: var(--dark-color);
+}
+
