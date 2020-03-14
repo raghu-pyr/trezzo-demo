@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Trezzo - Engineering, Innovation, Technology</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -53,7 +53,6 @@
         your experience and security.
       </p>
     <![endif]-->
-
     <script>
       $(document).ready(function() {
         $(".sidenav").sidenav();
@@ -73,38 +72,90 @@
       <nav>
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">TREZZO</a>
+            <a href="index.html" class="brand-logo"
+              ><img height="45px" src="img/trezzo-blue-bg.png" alt=""
+            /></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
             >
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="collapsible.html">INDUSTRIES</a></li>
+            <ul class="right hide-on-med-and-down active">
+              <li class="active-link"><a href="index.html">HOME</a></li>
+              <li>
+                <a class="dropdown-trigger" data-target="servDrop" href="#"
+                  >SERVICES<span
+                    ><i class="material-icons right">arrow_drop_down</i></span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-trigger" data-target="indDrop" href="#"
+                  >INDUSTRIES<span
+                    ><i class="material-icons right">arrow_drop_down</i></span
+                  ></a
+                >
+              </li>
               <li><a href="mobile.html">ABOUT</a></li>
-              <li><a href="mobile.html">CONTACT</a></li>
+              <li class="btn-contrast"><a href="contact.html">CONTACT</a></li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
     </div>
 
-    <!--[if IE]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
+    <ul class="sidenav collapsible" id="mobile-demo">
+      <div class="background">
+        <a href="#" class="">
+          <img class="responsive-img" src="img/trezzo-blue-bg.png" alt="" />
+        </a>
+      </div>
+      <li><a class="white-text" href="index.html">HOME</a></li>
+      <li>
+        <div class="white-text collapsible-header">
+          SERVICE<span><i class="material-icons">arrow_drop_down</i></span>
+        </div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a class="white-text" href="#">Design</a></li>
+            <li><a class="white-text" href="#">Manufacturing</a></li>
+            <li><a class="white-text" href="#">Testing</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="white-text collapsible-header">
+          INDUSTRIES<span><i class="material-icons">arrow_drop_down</i></span>
+        </div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a class="white-text" href="#">Aerospace</a></li>
+            <li><a class="white-text" href="#">Automotive</a></li>
+            <li><a class="white-text" href="#">Consumer Electronics</a></li>
+            <li><a class="white-text" href="#">Equipment</a></li>
+            <li><a class="white-text" href="#">Industrial</a></li>
+            <li><a class="white-text" href="#">Medical</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a class=" white-text" href="collapsible.html">ABOUT</a></li>
+      <li><a class=" white-text" href="contact.html">CONTACT</a></li>
+    </ul>
 
-    <section id="home-banner" class="section slider">
+    <ul id="servDrop" class="dropdown-content">
+      <li><a class="white-text" href="#">Design</a></li>
+      <li><a class="white-text" href="#">Manufacturing</a></li>
+      <li><a class="white-text" href="#">Testing</a></li>
+    </ul>
+
+    <ul id="indDrop" class="dropdown-content white-text">
+      <li><a class="white-text" href="#">Aerospace</a></li>
+      <li><a class="white-text" href="#">Automotive</a></li>
+      <li><a class="white-text" href="#">Consumer Electronics</a></li>
+      <li><a class="white-text" href="#">Equipment</a></li>
+      <li><a class="white-text" href="#">Industrial</a></li>
+      <li><a class="white-text" href="#">Medical</a></li>
+    </ul>
+
+    <section id="banner-sect" class="section slider">
       <ul class="slides">
         <li>
           <img src="img/bolt.jpg" alt="" />
@@ -114,7 +165,7 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
               animi facilis architecto quae, illo eveniet!
             </h5>
-            <a href="#" class="btn btn-large">Contact</a>
+            <a href="contact.html" class="btn btn-large">Contact</a>
           </div>
         </li>
         <li>
@@ -163,7 +214,7 @@
                   </a>
                 </p>
               </div>
-              <div class="card-reveal center-align">
+              <div class="card-reveal center-align white-text">
                 <span class="card-title"
                   >Design<i class="material-icons right">close</i></span
                 >
@@ -171,11 +222,9 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
                   impedit at officiis nobis praesentium, hic est reiciendis
                   neque dolorem unde deleniti rem provident esse, velit,
-                  architecto repellat expedita quae nisi. Cum voluptate unde,
-                  quaerat mollitia fugit sapiente similique reiciendis pariatur
-                  nobis quae ab tenetur ullam, explicabo dolore. Qui dolore
-                  aliquid, cumque aliquam labore ut non!
+                  architecto repellat expedita quae nisi.
                 </p>
+                <a href="#" class="btn-small">Take me there</a>
               </div>
             </div>
           </div>
@@ -199,7 +248,7 @@
                   </a>
                 </p>
               </div>
-              <div class="card-reveal center-align">
+              <div class="card-reveal center-align white-text">
                 <span class="card-title"
                   >Manufacturing<i class="material-icons right">close</i></span
                 >
@@ -207,11 +256,9 @@
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
                   nemo, doloribus sint velit a quisquam accusantium incidunt,
                   corrupti iste laboriosam veniam molestiae dolore minima
-                  necessitatibus. Nulla consectetur quam sit quis eos minima
-                  commodi expedita esse quidem quo, exercitationem accusantium
-                  odio maxime eligendi laudantium fuga numquam in sunt magni
-                  deleniti saepe nesciunt. Reprehenderit excepturi doloremque .
+                  necessitatibus. Nulla consectetur
                 </p>
+                <a href="#" class="btn-small">Take me there</a>
               </div>
             </div>
           </div>
@@ -233,20 +280,18 @@
                   </a>
                 </p>
               </div>
-              <div class="card-reveal">
-                <span class="card-title center-align"
+              <div class="card-reveal center-align white-text">
+                <span class="card-title"
                   >Testing<i class="material-icons right">close</i></span
                 >
-                <p id="card-text">
+                <p id="card-text truncate">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Mollitia autem architecto doloribus accusamus ab illo
                   quibusdam eum dolores rem maiores earum porro dolor magni
                   necessitatibus, rerum veritatis nisi veniam minus? Voluptatum
-                  esse eos quod minima quia incidunt neque tempora perferendis,
-                  velit voluptate sint recusandae aliquid aliquam eius adipisci.
-                  Quis illo esse, amet quaerat voluptate ex doloribus deleniti
-                  consequuntur suscipit maiores.
+                  esse eos quod minima quia
                 </p>
+                <a href="#" class="btn-small">Take me there</a>
               </div>
             </div>
           </div>
@@ -296,30 +341,56 @@
           </div>
           <div class="row">
             <div class="col m4 s12 center">
-              <h4><i class="material-icons large">airplanemode_active</i></h4>
-              <h5>Aerospace</h5>
+              <a href="#">
+                <div class="indus-icon">
+                  <h4>
+                    <i class="material-icons large">airplanemode_active</i>
+                  </h4>
+                  <h5>Aerospace</h5>
+                </div>
+              </a>
             </div>
             <div class="col m4 s12 center">
-              <h4><i class="material-icons large">directions_car</i></h4>
-              <h5>Automotive</h5>
+              <a href="">
+                <div class="indus-icon">
+                  <h4><i class="material-icons large">directions_car</i></h4>
+                  <h5>Automotive</h5>
+                </div>
+              </a>
             </div>
             <div class="col m4 s12 center">
-              <h4><i class="material-icons large">phonelink</i></h4>
-              <h5>Consumer Electronics</h5>
+              <a href="">
+                <div class="indus-icon">
+                  <h4><i class="material-icons large">phonelink</i></h4>
+                  <h5>Consumer Electronics</h5>
+                </div>
+              </a>
             </div>
           </div>
           <div class="row">
             <div class="col m4 s12 center">
-              <h4><i class="fas fa-cogs fa-3x"></i></h4>
-              <h5>Equipment</h5>
+              <a href="">
+                <div class="indus-icon">
+                  <h4><i class="fas fa-cogs fa-3x"></i></h4>
+                  <h5>Equipment</h5>
+                </div>
+              </a>
             </div>
             <div class="col m4 s12 center">
-              <h4><i class="fas fa-industry fa-3x"></i></h4>
-              <h5>Industrial</h5>
+              <a href="">
+                <div class="indus-icon">
+                  <h4><i class="fas fa-industry fa-3x"></i></h4>
+                  <h5>Industrial</h5>
+                </div>
+              </a>
             </div>
             <div class="col m4 s12 center">
-              <h4><i class="fas fa-stethoscope fa-3x"></i></h4>
-              <h5>Medical</h5>
+              <a href="">
+                <div class="indus-icon">
+                  <h4><i class="fas fa-stethoscope fa-3x"></i></h4>
+                  <h5>Medical</h5>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -367,6 +438,12 @@
       </div>
     </section>
 
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large btn z-depth-5" href="#banner-sect">
+        <i class="large material-icons">keyboard_arrow_up</i>
+      </a>
+    </div>
+
     <footer class="page-footer">
       <div class="container">
         <div class="row">
@@ -384,13 +461,13 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Useful Links</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Service</a></li>
               <li>
                 <a class="grey-text text-lighten-3" href="#!">Industries</a>
               </li>
               <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+              <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -462,10 +539,14 @@
     <script>
       $(document).ready(function() {
         $(".sidenav").sidenav();
-
-        $(".carousel").carousel({
-          numVisible: 6
+        $(".dropdown-trigger").dropdown({
+          coverTrigger: false,
+          constrainWidth: false,
+          hover: true
         });
+
+        $(".collapsible").collapsible();
+        $(".fixed-action-btn").floatingActionButton();
 
         $(".slider").slider({
           indicators: false,

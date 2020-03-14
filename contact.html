@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trezzo - Engineering, Innovation, Technology</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+
+        $(".carousel").carousel();
+
+        $(".slider").slider({
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 3000
+        });
+      });
+    </script>
+
+    <div class="navbar-fixed">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"
+              ><img height="45px" src="img/trezzo-blue-bg.png" alt=""
+            /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down active">
+              <li><a href="index.html">HOME</a></li>
+              <li>
+                <a class="dropdown-trigger" data-target="servDrop" href="#"
+                  >SERVICES<span
+                    ><i class="material-icons right">arrow_drop_down</i></span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-trigger" data-target="indDrop" href="#"
+                  >INDUSTRIES<span
+                    ><i class="material-icons right">arrow_drop_down</i></span
+                  ></a
+                >
+              </li>
+              <li><a href="mobile.html">ABOUT</a></li>
+              <li class="active-link"><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav collapsible" id="mobile-demo">
+      <div class="background">
+        <a href="#" class="">
+          <img class="responsive-img" src="img/trezzo-blue-bg.png" alt="" />
+        </a>
+      </div>
+      <hr class="divider">
+      <li><a class="white-text" href="sass.html">HOME</a></li>
+      <li>
+        <div class="white-text collapsible-header">
+          SERVICE<span><i class="material-icons">arrow_drop_down</i></span>
+        </div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a class="white-text" href="#">Design</a></li>
+            <li><a class="white-text" href="#">Manufacturing</a></li>
+            <li><a class="white-text" href="#">Testing</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="white-text collapsible-header">
+          INDUSTRIES<span><i class="material-icons">arrow_drop_down</i></span>
+        </div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a class="white-text" href="#">Aerospace</a></li>
+            <li><a class="white-text" href="#">Automotive</a></li>
+            <li><a class="white-text" href="#">Consumer Electronics</a></li>
+            <li><a class="white-text" href="#">Equipment</a></li>
+            <li><a class="white-text" href="#">Industrial</a></li>
+            <li><a class="white-text" href="#">Medical</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a class=" white-text" href="collapsible.html">ABOUT</a></li>
+      <li><a class=" white-text" href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <ul id="servDrop" class="dropdown-content">
+      <li><a class="white-text" href="#">Design</a></li>
+      <li><a class="white-text" href="#">Manufacturing</a></li>
+      <li><a class="white-text" href="#">Testing</a></li>
+    </ul>
+
+    <ul id="indDrop" class="dropdown-content white-text">
+      <li><a class="white-text" href="#">Aerospace</a></li>
+      <li><a class="white-text" href="#">Automotive</a></li>
+      <li><a class="white-text" href="#">Consumer Electronics</a></li>
+      <li><a class="white-text" href="#">Equipment</a></li>
+      <li><a class="white-text" href="#">Industrial</a></li>
+      <li><a class="white-text" href="#">Medical</a></li>
+    </ul>
+
+    <section class="section" id="banner-sect">
+      <div class="container">
+        <div class="row">
+          <div class="col center offset-m1 s12 m10 white-text">
+            <h2>Contact Us</h2>
+            <h5>Speak to us. Make it happen.</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact-sect">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4 center" id="address-card">
+            <h4 class="head-color">Address</h4>
+            <h5>TREZZO TECHNOLOGY</h5>
+            <h6>#27, Third street,</h6>
+            <h6>Anna complex, Defense enclave,</h6>
+            <h6>IAF post, Avadi</h6>
+            <h6>Chennai-600055</h6>
+            <p>
+              <a href="https://goo.gl/maps/t9K8Ki3giuJ9NHco7"
+                >Navigate via Google Maps</a
+              >
+            </p>
+            <h4 class="head-color">Email</h4>
+            <h6>ops@trezzotech.com</h6>
+            <h6>trezzotech@gmail.com</h6>
+            <h4 class="head-color">Contact Person</h4>
+            <h6>SURESHBABU .S</h6>
+            <h6>HEAD –BUSINESS DEVELOPMENT</h6>
+            <h6>+91-9384615411</h6>
+            <h6>+91-9840661066</h6>
+          </div>
+          <div class="col s12 m8 card-panel" id="contact-card">
+            <h4 class="head-color">Write to us...</h4>
+            <form>
+              <div class="input-field">
+                <input type="text" id="first_name" class="validate" />
+                <label for="first_name">Full Name</label>
+                <span
+                  class="helper-text"
+                  data-error="Please Enter a Valid Email"
+                  >Ex: Brad Trav</span
+                >
+              </div>
+              <div class="input-field">
+                <input type="tel" id="number" class="validate" />
+                <label for="number">Phone Number</label>
+                <span
+                  class="helper-text"
+                  data-error="Please Enter a Valid Email"
+                  >Ex: 987654321</span
+                >
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" class="validate" />
+                <label for="email">Email</label>
+                <span
+                  class="helper-text"
+                  data-error="Please Enter a Valid Email"
+                  >Ex: brad@mail.com</span
+                >
+              </div>
+              <div class="input-field">
+                <input type="text" id="company" class="validate" />
+                <label for="company">Company</label>
+                <span
+                  class="helper-text"
+                  data-error="Please Enter a Valid Email"
+                  >Ex: Brad Corp.</span
+                >
+              </div>
+              <div class="input-field">
+                <textarea
+                  id="meessage"
+                  class="materialize-textarea"
+                  rows="5"
+                  class="validate"
+                ></textarea>
+                <label for="Message">Textarea</label>
+                <span
+                  class="helper-text"
+                  data-error="Please Enter a Valid Email"
+                  >Ex: Please send quote</span
+                >
+              </div>
+              <input
+                type="submit"
+                value="Signup"
+                class="btn btn-large btn-block"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large btn z-depth-5" href="#banner-sect">
+        <i class="large material-icons">keyboard_arrow_up</i>
+      </a>
+    </div>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Contact Info</h5>
+            <p class="grey-text text-lighten-4">
+              TREZZO TECHNOLOGY <br />
+
+              #27, Third street, Anna complex, <br />
+              Defense enclave, IAF post, <br />
+              Avadi, Chennai - 600055<br />
+              Tamil Nadu, India.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Useful Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="index.html">Home</a>
+              </li>
+              <li><a class="grey-text text-lighten-3" href="#!">Service</a></li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Industries</a>
+              </li>
+              <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+              <li>
+                <a class="grey-text text-lighten-3" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              © 2020 Copyright TREZZO
+            </div>
+
+            <div class="col l4 offset-l2 s12">
+              <a
+                class="social grey-text text-lighten-4"
+                id="twit-icon"
+                href="#!"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="social grey-text text-lighten-4" id="fb-icon" href="#!"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                class="social grey-text text-lighten-4"
+                id="insta-icon"
+                href="#!"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="social grey-text text-lighten-4"
+                id="link-icon"
+                href="#!"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                class="social grey-text text-lighten-4"
+                id="yout-icon"
+                href="#!"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function() {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+
+    <!-- materilaize init codes -->
+
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+        $(".dropdown-trigger").dropdown({
+          coverTrigger: false,
+          constrainWidth: false,
+          hover: true
+        });
+
+        $(".collapsible").collapsible();
+        $(".fixed-action-btn").floatingActionButton();
+
+        $(".slider").slider({
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 3000
+        });
+      });
+    </script>
+  </body>
+</html>
