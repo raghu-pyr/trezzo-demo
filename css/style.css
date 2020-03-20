@@ -1,3 +1,5 @@
+/********* COMMON STYLE *************/
+
 :root {
   --dark-color: #283044;
   --main-color: #50c9ce;
@@ -21,8 +23,19 @@
 }
 
 .head-color {
-  color: var(--main-color)
+  color: var(--main-color);
 }
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: var(--supp-color2);
+  height: 0.5px;
+}
+
+/************* NAV STYLE ***************/
 
 nav {
   background-color: var(--main-color) !important;
@@ -55,12 +68,14 @@ nav {
   padding: 10px;
 }
 
+/************* INDEX STYLE ***************/
+
 .slider .slides {
   background: none !important;
 }
 
 .slider .btn {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 section {
@@ -88,6 +103,7 @@ section {
 
 #clients img {
   margin-top: 30px;
+  -webkit-transition: transform 0.2s ease-in-out;
 }
 
 #clients img:hover {
@@ -104,8 +120,12 @@ section {
   min-height: 600px;
 }
 
-#industry-sect a{
+#industry-sect a {
   color: white !important;
+}
+
+.indus-icon {
+  -webkit-transition: transform 0.3s ease-in-out;
 }
 
 .indus-icon:hover {
@@ -147,6 +167,8 @@ section {
   flex-wrap: wrap;
 }
 
+/************* CONTACT STYLE ***************/
+
 #banner-sect {
   background-image: url(../img/galaxy-bg.jpg);
   background-size: cover;
@@ -159,8 +181,58 @@ section {
 }
 
 #contact-card {
-  padding: 15px;;
+  padding: 15px;
 }
+
+/************* DESIGN STYLE ***************/
+
+#desgvid-sect {
+  height: 650px;
+  overflow: hidden;
+  color: var(--dark-color) !important;
+}
+
+.no-border {
+ padding: 0px;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.video-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(235,245,238, 0.9);
+  overflow: hidden;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  overflow: hidden;
+}
+
+#desg-icons {
+  color: var(--dark-color) !important;
+}
+
+#desgtech-sect img {
+  max-width: 150px;
+}
+
+#destech-sect i {
+  color: var(--main-color) !important;
+}
+
+/************* FOOTER STYLE ***************/
 
 .social {
   padding: 3px;
@@ -188,13 +260,4 @@ section {
 
 .page-footer {
   background-color: var(--dark-color);
-}
-
-hr {
-  border: 0;
-  clear: both;
-  display: block;
-  width: 96%;
-  background-color: var(--supp-color2);
-  height: 0.5px;
 }
